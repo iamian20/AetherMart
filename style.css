@@ -1,140 +1,94 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
-
-*{
-    margin: 0;
-    padding: 0;
+body {
+  font-family: Poppins, "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
-body{
-    font-size: 12pt;
-    font-family: Poppins, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-image: radial-gradient(circle at 34% 75%, rgba(142, 142, 142, 0.06) 0%, rgba(142, 142, 142, 0.06) 50%, rgba(11, 11, 11, 0.06) 50%, rgba(11, 11, 11, 0.06) 100%), radial-gradient(circle at 40% 51%, rgba(12, 12, 12, 0.06) 0%, rgba(12, 12, 12, 0.06) 50%, rgba(242, 242, 242, 0.06) 50%, rgba(242, 242, 242, 0.06) 100%), radial-gradient(circle at 50% 87%, rgba(189, 189, 189, 0.06) 0%, rgba(189, 189, 189, 0.06) 50%, rgba(0, 0, 0, 0.06) 50%, rgba(0, 0, 0, 0.06) 100%), linear-gradient(90deg, hsl(35, 0%, 96%), hsl(35, 0%, 96%));
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-    background-attachment: fixed;
-    height: 100vh;
+.navbar {
+  background-color: #fff;
+  height: 80px;
+  margin: 20px;
+  border-radius: 16px;
+  padding: 0.5rem;
 }
 
-nav{
-    height: 60px;
-    background-color: rgb(4, 1, 41);
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
+.navbar-brand {
+  font-weight: 500;
+  color: #009970;
+  font-size: 20px;
 }
 
-.links-container {
-    height: 100%;
-    width: 33%;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+.login-button {
+  background-color: green;
+  color: whitesmoke;
+  padding: 5px 20px;
+  margin-right: 20px;
+  border-radius: 20px;
+  text-decoration: none;
+  transition: 0.3s background-color;
 }
 
-nav a {
-    height: 100%;
-    padding: 0 20px;
-    display: flex;
-    align-items: center;
-    text-decoration: none;
-    color: whitesmoke;
+.login-button:hover {
+  background-color: lightgreen;
 }
 
-nav a:hover {
-    background-color: rgb(0, 168, 206);
+.navbar-toggler {
+  border: none;
+  font-size: 1.25rem;
 }
 
-nav .logo-container {
-    height: 100%;
-    padding: 0 30px;
-    margin-right: auto;
+.nav-link {
+  color: #666777;
+  font-weight: 500;
+  position: relative;
 }
 
-#sidebar-active {
-    display: none;
+.nav-link:hover,
+.nav-link.active {
+  color: #000;
 }
 
-.open-sidebar, .close-sidebar {
-    display: none;
+@media (min-width: 720px) {
+  .nav-link::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 2px;
+    background-color: #009970;
+    visibility: hidden;
+    transition: 0.3s ease-in-out;
+  }
+
+  .nav-link:hover::before,
+  .nav-link.active::before {
+    width: 100%;
+    visibility: visible;
+  }
+}
+@media (max-width: 768px) {
+  .offcanvas.offcanvas-end {
+    width: 50% !important;
+    /* Adjust the width as needed */
+  }
 }
 
-h1{
-    margin-top: 30px;
-    text-align: center;
+.hero-section {
+  background: url("images/cropped-image-woman-inputting-card-information-key-phone-laptop-while-shopping-online.jpg")
+    no-repeat center;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
 }
 
-.front-page {
-    position: relative;
-    width: 40%;
-    height: 100%;
-    padding: 10px 20px;
-    margin-left: 100px;
-    margin-top: 30px;
-}
-
-.front-page h2 {
-    margin-top: 30px;
-    margin-bottom: 50px;
-}
-
-.front-page button {
-    margin-top: 30px;
-    height: 40px;
-    padding: 0 10px;
-    color: whitesmoke;
-    background: rgb(4, 149, 69);
-    border: none;
-    border-radius: 10px;
-    cursor: pointer;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-@media (max-width: 600px){
-    .links-container {
-        flex-direction: column;
-        align-items: flex-start;
-        position: fixed;
-        top: 0;
-        right: -100%;
-        z-index: 10;
-        width: 200px;
-        background-color: rgb(4, 1, 41);
-        box-shadow: -5px 0px 5px rgba(0, 0, 0, 0.25);
-        transition: 0.5s ease-out;
-    }
-
-    nav a {
-        box-sizing: border-box;
-        height: auto;
-        width: 100%;
-        padding: 20px 30px;
-        justify-content: space-around;
-    }
-
-    nav .home-link {
-        margin-right: auto;
-    }
-
-    .open-sidebar,
-    .close-sidebar {
-        display: block;
-        padding: 20px;
-    }
-    
-    #sidebar-active:checked ~ .links-container {
-        right: 0;
-    }
-
+.hero-section::before {
+  background-color: rgba(0, 0, 0, 0.6);
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
 }
