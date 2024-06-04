@@ -10,13 +10,16 @@
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
-    <link rel="icon" href="images/aethermart-high-resolution-logo-black-transparent.png">
+    <link
+      rel="icon"
+      href="images/aethermart-high-resolution-logo-black-transparent.png"
+    />
     <title>AetherMart - The Shop for You</title>
 
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg fixed-top">
+    <nav class="navbar navbar-expand-lg mb-5">
       <div class="container-fluid">
         <a class="navbar-brand me-auto" href="#">AetherMart</a>
 
@@ -38,14 +41,17 @@
             ></button>
           </div>
           <div class="offcanvas-body">
-            <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
               <li class="nav-item">
-                <a class="nav-link mx-lg-2 active" aria-current="page" href="#"
+                <a
+                  class="nav-link mx-lg-2 active"
+                  aria-current="page"
+                  href="#home"
                   >Home</a
                 >
               </li>
               <li class="nav-item">
-                <a class="nav-link mx-lg-2" href="#">Products</a>
+                <a class="nav-link mx-lg-2" href="#products">Products</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link mx-lg-2" href="#">About</a>
@@ -53,10 +59,14 @@
               <li class="nav-item">
                 <a class="nav-link mx-lg-2" href="#">Contact</a>
               </li>
+              <li class="nav-item mx-lg-2 mt-lg-0 mt-3">
+                <a href="#" class="btn login-button btn-success rounded"
+                  >Login</a
+                >
+              </li>
             </ul>
           </div>
         </div>
-        <a href="#" class="login-button">Login</a>
 
         <button
           class="navbar-toggler"
@@ -72,8 +82,103 @@
     </nav>
 
     <!-- hero section -->
+    <main>
+      <section class="hero-section container p-4" id="home">
+        <h2 class="display-3 mb-4">Welcome to AetherMart</h2>
+        <h3 class="font-weight-light mb-5">Discover the Future of Shopping</h3>
+        <p>
+          <strong>AetherMart</strong> is your ultimate destination for unique,
+          high-quality products at unbeatable prices. Explore our diverse range
+          of items, from cutting-edge electronics to stylish fashion, all
+          curated to meet your needs and exceed your expectations.
+        </p>
+        <button class="btn mt-3 p bg-success text-white border rounded-pill">
+          Get Started
+        </button>
+      </section>
 
-    <section class="hero-section"></section>
+      <div class="hero-section1 container p-5">
+        <div class="row">
+          <h2 class="mb-5">Why Shop with AetherMart?</h2>
+          <div class="col-sm-3 mb-5">
+            <h3 class="mb-4">Unmatched Quality</h3>
+            <p>
+              We handpick each product to ensure you receive only the best. Our
+              rigorous quality checks guarantee that every item meets our high
+              standards.
+            </p>
+          </div>
+          <div class="col-sm-3 mb-5">
+            <h3 class="mb-4">Exceptional Value</h3>
+            <p>
+              Enjoy competitive prices on all our products without compromising
+              on quality. AetherMart offers value that you won't find anywhere
+              else.
+            </p>
+          </div>
+          <div class="col-sm-3 mb-5">
+            <h3 class="mb-4">Seamless Experience</h3>
+            <p>
+              From browsing to checkout, our user-friendly website ensures a
+              smooth and hassle-free shopping experience. Shop with confidence
+              knowing that we prioritize your convenience and satisfaction.
+            </p>
+          </div>
+          <div class="col-sm-3 mb-5">
+            <h3 class="mb-4">Customer-Centric Servicey</h3>
+            <p>
+              Our dedicated customer support team is here to assist you 24/7.
+              Whether you have a question or need help with an order, we’re just
+              a click away.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <section id="products" class="hero-section2 container p-5">
+        <h2 class="text-center">Features</h2>
+        <div class="card-deck row">
+          <div class="card col-sm-3 mb-5 p-3">
+            <img src="/images/features/electronics.jpg" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Electronics</h5>
+              <p class="card-text">
+                Stay ahead of the curve with the latest gadgets and tech
+                accessories.
+              </p>
+            </div>
+          </div>
+          <div class="card col-sm-3 mb-5 p-3">
+            <img src="/images/features/fashion.jpg" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Fashion</h5>
+              <p class="card-text">
+                Discover trendy apparel and accessories that make a statement.
+              </p>
+            </div>
+          </div>
+          <div class="card col-sm-3 mb-5 p-3">
+            <img src="/images/features/home and living.jpg" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Home & Living</h5>
+              <p class="card-text">
+                Find stylish and functional items to enhance your living space.
+              </p>
+            </div>
+          </div>
+          <div class="card col-sm-3 mb-5 p-3">
+            <img src="/images/features/health and beauty.jpg" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Health & Beauty</h5>
+              <p class="card-text">
+                Pamper yourself with top-notch beauty products and wellness
+                essentials.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
