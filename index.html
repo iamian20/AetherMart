@@ -11,6 +11,10 @@
       crossorigin="anonymous"
     />
     <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link
       rel="icon"
       href="images/aethermart-high-resolution-logo-black-transparent.png"
     />
@@ -59,9 +63,14 @@
                 <a class="nav-link mx-lg-2" href="#contact">Contact</a>
               </li>
               <li class="nav-item mx-lg-2 mt-lg-0 mt-3">
-                <a href="#" class="btn login-button btn-success rounded"
-                  >Login</a
+                <button
+                  href="#"
+                  class="btn login-button btn-success rounded"
+                  data-bs-toggle="modal"
+                  data-bs-target="#loginModal"
                 >
+                  Login
+                </button>
               </li>
             </ul>
           </div>
@@ -91,7 +100,11 @@
           of items, from cutting-edge electronics to stylish fashion, all
           curated to meet your needs and exceed your expectations.
         </p>
-        <button class="btn mt-3 p-2 bg-success text-white rounded">
+        <button
+          class="btn mt-3 p-2 bg-success text-white rounded"
+          data-bs-toggle="modal"
+          data-bs-target="#loginModal"
+        >
           Get Started
         </button>
       </section>
@@ -195,7 +208,7 @@
       </section>
 
       <!-- About Us Section -->
-      <section id="about-us" class="hero-section3 py-5">
+      <section id="about-us" class="hero-section3 container py-5">
         <div class="container">
           <div class="row justify-content-center mb-4">
             <div class="col-lg-8 text-center">
@@ -248,6 +261,67 @@
       </section>
     </main>
 
+    <!-- login modal-->
+    <div
+      class="modal fade"
+      id="loginModal"
+      tabindex="-1"
+      aria-labelledby="loginModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header justify-content-center">
+            <h5 class="modal-title" id="loginModalLabel">Login</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="mb-3">
+                <label for="username" class="form-label">Username</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="username"
+                  required
+                />
+              </div>
+              <div class="mb-3">
+                <label for="password" class="form-label">Password</label>
+                <input
+                  type="password"
+                  class="form-control"
+                  id="password"
+                  required
+                />
+              </div>
+              <button type="submit" class="btn btn-primary w-100">Login</button>
+              <div class="text-center my-3">
+                <a href="#" class="text-decoration-none">Forgot Password?</a>
+              </div>
+              <div class="text-center my-3">
+                <p>or</p>
+              </div>
+              <button type="button" class="btn btn-light w-100">
+                <i class="fab fa-google"></i> Login with Google
+              </button>
+            </form>
+          </div>
+          <div class="modal-footer justify-content-center">
+            <p>
+              Don't have an account?
+              <a href="#" class="text-decoration-none">Sign up</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <!-- Footer -->
     <footer
       id="contact"
@@ -299,7 +373,7 @@
           <div class="col-md-3 mb-3 mb-md-0">
             <h6>Follow Us</h6>
             <ul
-              class="list-unstyled d-flex justify-content-center justify-content-md-start"
+              class="list-unstyled d-flex justify-content-center justify-content-md-center"
             >
               <li>
                 <a
@@ -317,7 +391,7 @@
                   href="#"
                   class="text-decoration-none me-3"
                   style="color: #f8f9fa"
-                  ><i class="bi bi-twitter"></i
+                  ><i class="fab fa-twitter" style="font-size: 24px"></i
                 ></a>
               </li>
               <li>
@@ -325,12 +399,12 @@
                   href="#"
                   class="text-decoration-none me-3"
                   style="color: #f8f9fa"
-                  ><i class="bi bi-instagram"></i
+                  ><i class="fab fa-instagram" style="font-size: 24px"></i
                 ></a>
               </li>
               <li>
                 <a href="#" class="text-decoration-none" style="color: #f8f9fa"
-                  ><i class="bi bi-linkedin"></i
+                  ><i class="fab fa-linkedin" style="font-size: 24px"></i
                 ></a>
               </li>
             </ul>
