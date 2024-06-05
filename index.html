@@ -21,8 +21,7 @@
   <body>
     <nav class="navbar navbar-expand-lg mb-5">
       <div class="container-fluid">
-        <a class="navbar-brand me-auto" href="#">AetherMart</a>
-
+        <a class="navbar-brand me-auto" href="#home">AetherMart</a>
         <div
           class="offcanvas offcanvas-end"
           tabindex="-1"
@@ -54,10 +53,10 @@
                 <a class="nav-link mx-lg-2" href="#products">Products</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link mx-lg-2" href="#">About</a>
+                <a class="nav-link mx-lg-2" href="#about-us">About</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link mx-lg-2" href="#">Contact</a>
+                <a class="nav-link mx-lg-2" href="#contact">Contact</a>
               </li>
               <li class="nav-item mx-lg-2 mt-lg-0 mt-3">
                 <a href="#" class="btn login-button btn-success rounded"
@@ -67,17 +66,17 @@
             </ul>
           </div>
         </div>
-
-        <button
+        <a
           class="navbar-toggler"
           type="button"
+          id="OpenMenu"
           data-bs-toggle="offcanvas"
           data-bs-target="#offcanvasNavbar"
           aria-controls="offcanvasNavbar"
           aria-label="Toggle navigation"
         >
           <span class="navbar-toggler-icon"></span>
-        </button>
+        </a>
       </div>
     </nav>
 
@@ -92,7 +91,7 @@
           of items, from cutting-edge electronics to stylish fashion, all
           curated to meet your needs and exceed your expectations.
         </p>
-        <button class="btn mt-3 p bg-success text-white border rounded-pill">
+        <button class="btn mt-3 p-2 bg-success text-white rounded">
           Get Started
         </button>
       </section>
@@ -139,7 +138,11 @@
         <h2 class="text-center">Features</h2>
         <div class="card-deck row">
           <div class="card col-sm-3 mb-5 p-3">
-            <img src="/images/features/electronics.jpg" class="card-img-top" alt="..." />
+            <img
+              src="/images/features/electronics.jpg"
+              class="card-img-top"
+              alt="..."
+            />
             <div class="card-body">
               <h5 class="card-title">Electronics</h5>
               <p class="card-text">
@@ -149,7 +152,11 @@
             </div>
           </div>
           <div class="card col-sm-3 mb-5 p-3">
-            <img src="/images/features/fashion.jpg" class="card-img-top" alt="..." />
+            <img
+              src="/images/features/fashion.jpg"
+              class="card-img-top"
+              alt="..."
+            />
             <div class="card-body">
               <h5 class="card-title">Fashion</h5>
               <p class="card-text">
@@ -158,7 +165,11 @@
             </div>
           </div>
           <div class="card col-sm-3 mb-5 p-3">
-            <img src="/images/features/home and living.jpg" class="card-img-top" alt="..." />
+            <img
+              src="/images/features/home and living.jpg"
+              class="card-img-top"
+              alt="..."
+            />
             <div class="card-body">
               <h5 class="card-title">Home & Living</h5>
               <p class="card-text">
@@ -167,7 +178,11 @@
             </div>
           </div>
           <div class="card col-sm-3 mb-5 p-3">
-            <img src="/images/features/health and beauty.jpg" class="card-img-top" alt="..." />
+            <img
+              src="/images/features/health and beauty.jpg"
+              class="card-img-top"
+              alt="..."
+            />
             <div class="card-body">
               <h5 class="card-title">Health & Beauty</h5>
               <p class="card-text">
@@ -178,7 +193,175 @@
           </div>
         </div>
       </section>
+
+      <!-- About Us Section -->
+      <section id="about-us" class="hero-section3 py-5">
+        <div class="container">
+          <div class="row justify-content-center mb-4">
+            <div class="col-lg-8 text-center">
+              <h2 class="mb-3">About Us</h2>
+              <p class="lead">
+                AetherMart is your ultimate destination for unique, high-quality
+                products at unbeatable prices. We are dedicated to providing you
+                with an exceptional shopping experience.
+              </p>
+            </div>
+          </div>
+          <div class="row align-items-center">
+            <div class="col-md-6 mb-5">
+              <img
+                src="/images/features/mission.jpg"
+                alt="About AetherMart"
+                class="img-fluid rounded shadow p-1 bg-light"
+              />
+            </div>
+            <div class="col-md-6">
+              <h3 class="mb-4">Our Mission</h3>
+              <p class="mb-5">
+                At AetherMart, our mission is to offer unmatched quality and
+                value to our customers. We believe that shopping should be an
+                enjoyable and satisfying experience, which is why we go the
+                extra mile to curate products that meet the highest standards.
+              </p>
+              <h3 class="mt-4 mb-3">Our Values</h3>
+              <ul class="list-unstyled">
+                <li class="mb-4">
+                  <strong>Customer Satisfaction</strong>: We prioritize your
+                  needs and work tirelessly to ensure your satisfaction.
+                </li>
+                <li class="mb-4">
+                  <strong>Quality Assurance</strong>: Each product undergoes
+                  rigorous checks to guarantee top-notch quality.
+                </li>
+                <li class="mb-4">
+                  <strong>Innovation</strong>: We keep up with the latest trends
+                  to bring you cutting-edge products.
+                </li>
+                <li class="mb-4">
+                  <strong>Integrity</strong>: We conduct our business with
+                  honesty and transparency.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
+
+    <!-- Footer -->
+    <footer
+      id="contact"
+      class="footer mt-5 py-4"
+      style="background-color: #343a40; color: #f8f9fa"
+    >
+      <div class="container">
+        <div class="row justify-content-between text-center text-md-left">
+          <div class="col-md-3 mb-3 mb-md-0">
+            <h5>AetherMart</h5>
+            <p>
+              Your ultimate destination for unique, high-quality products at
+              unbeatable prices.
+            </p>
+          </div>
+          <div class="col-md-2 mb-3 mb-md-0">
+            <h6>Quick Links</h6>
+            <ul class="list-unstyled">
+              <li>
+                <a
+                  href="#about-us"
+                  class="text-decoration-none"
+                  style="color: #f8f9fa"
+                  >About Us</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-decoration-none" style="color: #f8f9fa"
+                  >Contact Us</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-decoration-none" style="color: #f8f9fa"
+                  >Privacy Policy</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-decoration-none" style="color: #f8f9fa"
+                  >Terms of Service</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-decoration-none" style="color: #f8f9fa"
+                  >FAQs</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-3 mb-3 mb-md-0">
+            <h6>Follow Us</h6>
+            <ul
+              class="list-unstyled d-flex justify-content-center justify-content-md-start"
+            >
+              <li>
+                <a
+                  href="#"
+                  class="text-decoration-none me-3"
+                  style="color: #f8f9fa"
+                  ><i
+                    class="fab fa-facebook-square"
+                    style="font-size: 24px"
+                  ></i>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-decoration-none me-3"
+                  style="color: #f8f9fa"
+                  ><i class="bi bi-twitter"></i
+                ></a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-decoration-none me-3"
+                  style="color: #f8f9fa"
+                  ><i class="bi bi-instagram"></i
+                ></a>
+              </li>
+              <li>
+                <a href="#" class="text-decoration-none" style="color: #f8f9fa"
+                  ><i class="bi bi-linkedin"></i
+                ></a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-3 mb-3 mb-md-0">
+            <h6>Newsletter</h6>
+            <form>
+              <div class="mb-3">
+                <input
+                  type="email"
+                  class="form-control"
+                  id="newsletterEmail"
+                  placeholder="Enter your email"
+                  aria-label="Enter your email"
+                />
+              </div>
+              <button type="submit" class="btn btn-primary w-100">
+                Subscribe
+              </button>
+            </form>
+          </div>
+        </div>
+        <div class="row mt-4">
+          <div class="col text-center">
+            <p class="mb-0">&copy; 2024 AetherMart. All rights reserved.</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"

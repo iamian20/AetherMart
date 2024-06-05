@@ -107,3 +107,11 @@ body {
 .hero-section2 h2 {
   margin-bottom: 3.5rem;
 }
+
+.hero-section3 {
+  height: auto;
+  border-radius: 50px;
+  margin-top: 3rem;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+}
