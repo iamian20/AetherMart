@@ -1,0 +1,47 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  font-family: Poppins, "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: whitesmoke;
+  overflow-x: hidden;
+}
+
+@media (max-width: 375px) {
+  .offcanvas.offcanvas-end {
+    max-width: 70% !important;
+  }
+}
+
+.navbar-brand {
+  font-weight: 700;
+  font-size: 1.5rem;
+  letter-spacing: 2px;
+}
+
+.navbar {
+  background-color: #fff;
+  height: 80px;
+  border-radius: 16px;
+}
+
+.navbar li {
+  font-weight: 600;
+}
+
+#profile {
+  margin-left: -100px !important;
+}
+
+/* main section */
+#main {
+  margin-top: 8rem;
+}
+
+/* footer */
+footer {
+  background-color: #343a40;
+  color: whitesmoke;
+}
