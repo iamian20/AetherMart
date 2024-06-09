@@ -12,9 +12,7 @@ body {
 .navbar {
   background-color: #fff;
   height: 80px;
-  margin: 20px 0px;
   border-radius: 16px;
-  padding: 0.5rem;
 }
 
 .navbar-brand {
@@ -81,7 +79,7 @@ body {
 .hero-section {
   height: 500px;
   border-radius: 50px;
-  margin-top: 3rem;
+  margin-top: 9rem;
   background-color: rgba(0, 0, 0, 0.6);
   color: white;
   align-content: center;
