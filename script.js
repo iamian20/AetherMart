@@ -9,3 +9,11 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+  const loginButton = document.getElementById("log");
+
+  loginButton.addEventListener("click", function () {
+    alert("Login Success");
+  });
+});
