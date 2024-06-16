@@ -17,3 +17,27 @@ document.addEventListener("DOMContentLoaded", function () {
     alert("Login Success");
   });
 });
+
+function addToCart() {
+  alert("Item is added to cart");
+}
+
+document.addEventListener("DOMContentLoaded", function () {
+  const numberInput = document.getElementById("numberInput");
+  const btnMinus = document.getElementById("btn-minus");
+  const btnPlus = document.getElementById("btn-plus");
+
+  btnMinus.addEventListener("click", function () {
+    numberInput.value = Math.max(
+      parseInt(numberInput.value) - 1,
+      numberInput.min
+    );
+  });
+
+  btnPlus.addEventListener("click", function () {
+    numberInput.value = Math.min(
+      parseInt(numberInput.value) + 1,
+      numberInput.max
+    );
+  });
+});
